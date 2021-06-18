@@ -22,11 +22,11 @@ class PrivacyAndSaftyPage extends StatelessWidget {
       body: ListView(
         physics: BouncingScrollPhysics(),
         children: <Widget>[
-          HeaderWidget('Tweets'),
+          HeaderWidget('Swill'),
           SettingRowWidget(
-            "Protect your tweet",
+            "Protect your swill",
             subtitle:
-                'Only current followers and people you approve in future will be able to see your tweets.',
+                'Only current followers and people you approve in future will be able to see your swill.',
             vPadding: 15,
             showDivider: false,
             visibleSwitch: true,
@@ -82,7 +82,7 @@ class PrivacyAndSaftyPage extends StatelessWidget {
             visibleSwitch: true,
           ),
           SettingRowWidget(
-            "Mark media you tweet as containing material thta may be sensitive",
+            "Mark media you swill as containing material that may be sensitive",
             vPadding: 15,
             showDivider: false,
             visibleSwitch: true,
@@ -106,7 +106,7 @@ class PrivacyAndSaftyPage extends StatelessWidget {
           SettingRowWidget(
             "Precise location",
             subtitle:
-                'Disabled \n\n\nIf enabled, Fwitter will collect, store, and use your device\'s precise location, such as your GPS information. This lets Fwitter improve your experience - for example, showing you mpre local content, ads, and recommendations.',
+                'Disabled \n\n\nIf enabled, Swilow will collect, store, and use your device\'s precise location, such as your GPS information. This lets Swilow improve your experience - for example, showing you mpre local content, ads, and recommendations.',
           ),
           HeaderWidget(
             'Personalisation and data',
@@ -117,7 +117,7 @@ class PrivacyAndSaftyPage extends StatelessWidget {
             subtitle: "Allow all",
           ),
           SettingRowWidget(
-            "See your Fwitter data",
+            "See your Swilow data",
             subtitle:
                 "Review and edit your profile information and data associated with your account.",
           ),

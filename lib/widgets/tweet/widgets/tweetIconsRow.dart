@@ -53,7 +53,7 @@ class TweetIconsRow extends StatelessWidget {
             onPressed: () {
               var state = Provider.of<FeedState>(context, listen: false);
               state.setTweetToReply = model;
-              Navigator.of(context).pushNamed('/ComposeTweetPage');
+              Navigator.of(context).pushNamed('/ComposeSwillPage');
             },
           ),
           _iconWidget(context,
@@ -138,7 +138,7 @@ class TweetIconsRow extends StatelessWidget {
             customText(Utility.getPostTime2(model.createdAt),
                 style: TextStyles.textStyle14),
             SizedBox(width: 10),
-            customText('Fwitter for Android',
+            customText('Swilow for Android',
                 style: TextStyle(color: Theme.of(context).primaryColor))
           ],
         ),
@@ -177,7 +177,7 @@ class TweetIconsRow extends StatelessWidget {
                         : SizedBox(width: 5),
                     AnimatedCrossFade(
                       firstChild: SizedBox.shrink(),
-                      secondChild: customText('Retweets',
+                      secondChild: customText('Reswill',
                           style: TextStyles.subtitleStyle),
                       crossFadeState: !isRetweetAvailable
                           ? CrossFadeState.showFirst
@@ -236,9 +236,9 @@ class TweetIconsRow extends StatelessWidget {
         builder: (BuildContext context) => UsersListPage(
           pageTitle: "Liked by",
           userIdsList: model.likeList.map((userId) => userId).toList(),
-          emptyScreenText: "This tweet has no like yet",
+          emptyScreenText: "This swill has no like yet",
           emptyScreenSubTileText:
-              "Once a user likes this tweet, user list will be shown here",
+              "Once a user likes this swill, user list will be shown here",
         ),
       ),
     );

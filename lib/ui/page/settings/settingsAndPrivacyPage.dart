@@ -46,7 +46,7 @@ class SettingsAndPrivacyPage extends StatelessWidget {
           SettingRowWidget("Accessibility", navigateTo: 'AccessibilityPage'),
           SettingRowWidget("Proxy", navigateTo: "ProxyPage"),
           SettingRowWidget(
-            "About Fwitter",
+            "About Swilow",
             navigateTo: "AboutPage",
           ),
           SettingRowWidget(
@@ -54,7 +54,7 @@ class SettingsAndPrivacyPage extends StatelessWidget {
             showDivider: false,
             vPadding: 10,
             subtitle:
-                'These settings affect all of your Fwitter accounts on this devce.',
+                'These settings affect all of your Swilow accounts on this devce.',
           )
         ],
       ),

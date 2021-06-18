@@ -375,7 +375,7 @@ Widget loader() {
   } else {
     return Center(
       child: CircularProgressIndicator(
-        valueColor: AlwaysStoppedAnimation<Color>(Colors.blue),
+        valueColor: AlwaysStoppedAnimation<Color>(Colors.greenAccent),
       ),
     );
   }
@@ -428,7 +428,7 @@ Widget customExtendedText(String text, bool isExpanded,
                   padding: padding,
                   child: Text(
                     !isExpanded ? 'more...' : 'Less...',
-                    style: TextStyle(color: Colors.blue, fontSize: 14),
+                    style: TextStyle(color: Colors.greenAccent, fontSize: 14),
                   ),
                 ),
               ),

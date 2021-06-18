@@ -88,7 +88,7 @@ class RetweetWidget extends StatelessWidget {
                     fontWeight: FontWeight.w400,
                   ),
                   urlStyle: TextStyle(
-                      color: Colors.blue, fontWeight: FontWeight.w400),
+                      color: Colors.greenAccent, fontWeight: FontWeight.w400),
                 ),
               ),
         SizedBox(height: model.imagePath == null ? 8 : 0),

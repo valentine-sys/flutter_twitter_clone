@@ -63,7 +63,7 @@ class _SplashPageState extends State<SplashPage> {
     var id = deepLink.path.split("/")[2];
     if (type == "profilePage") {
       Navigator.of(context).pushNamed('/ProfilePage/' + id);
-    } else if (type == "tweet") {
+    } else if (type == "swill") {
       var feedstate = Provider.of<FeedState>(context, listen: false);
       feedstate.getpostDetailFromDatabase(id);
       Navigator.of(context).pushNamed('/FeedPostDetail/' + id);
@@ -94,7 +94,7 @@ class _SplashPageState extends State<SplashPage> {
     final appVersion = await _getAppVersionFromFirebaseConfig();
     if (appVersion != currentAppVersion) {
       if (kDebugMode) {
-        cprint("Latest version of app is not installed on your system");
+        cprint("Latest version of Swilow is not installed on your system");
         cprint(
             "In debug mode we are not restrict devlopers to redirect to update screen");
         cprint(

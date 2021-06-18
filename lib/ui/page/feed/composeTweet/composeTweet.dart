@@ -298,7 +298,7 @@ class _ComposeRetweet
             fontSize: 14,
             fontWeight: FontWeight.w400,
           ),
-          urlStyle: TextStyle(color: Colors.blue, fontWeight: FontWeight.w400),
+          urlStyle: TextStyle(color: Colors.greenAccent, fontWeight: FontWeight.w400),
         ),
       ],
     );
@@ -407,7 +407,7 @@ class _ComposeTweet
                       ),
                       urlStyle: TextStyle(
                         fontSize: 16,
-                        color: Colors.blue,
+                        color: Colors.greenAccent,
                         fontWeight: FontWeight.w400,
                       ),
                     ),

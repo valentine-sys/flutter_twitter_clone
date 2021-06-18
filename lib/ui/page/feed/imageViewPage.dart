@@ -91,7 +91,7 @@ class _ImageViewPgeState extends State<ImageViewPge> {
                           maxLines: null,
                           style: TextStyle(color: Colors.white),
                           decoration: InputDecoration(
-                            fillColor: Colors.blue,
+                            fillColor: Colors.greenAccent,
                             border: OutlineInputBorder(
                               borderRadius: BorderRadius.all(
                                 Radius.circular(30.0),

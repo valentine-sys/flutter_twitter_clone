@@ -36,7 +36,7 @@ class Tweet extends StatelessWidget {
       Utility.copyToClipBoard(
           scaffoldKey: scaffoldKey,
           text: model.description ?? "",
-          message: "Tweet copy to clipboard");
+          message: "Swill copy to clipboard");
     }
   }
 
@@ -242,7 +242,7 @@ class _TweetBody extends StatelessWidget {
                           fontSize: descriptionFontSize,
                           fontWeight: descriptionFontWeight),
                       urlStyle: TextStyle(
-                          color: Colors.blue,
+                          color: Colors.greenAccent,
                           fontSize: descriptionFontSize,
                           fontWeight: descriptionFontWeight),
                     ),
@@ -351,7 +351,7 @@ class _TweetDetailBody extends StatelessWidget {
                           fontWeight: descriptionFontWeight,
                         ),
                         urlStyle: TextStyle(
-                          color: Colors.blue,
+                          color: Colors.greenAccent,
                           fontSize: descriptionFontSize,
                           fontWeight: descriptionFontWeight,
                         ),

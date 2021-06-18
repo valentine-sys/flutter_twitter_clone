@@ -93,23 +93,23 @@ class TweetBottomSheet {
           ),
         ),
         _widgetBottomSheetRow(context, AppIcon.link,
-            text: 'Copy link to tweet', isEnable: true, onPressed: () async {
+            text: 'Copy link to Swill', isEnable: true, onPressed: () async {
           var uri = await Utility.createLinkToShare(
             context,
-            "tweet/${model.key}",
+            "Swill/${model.key}",
             socialMetaTagParameters: SocialMetaTagParameters(
                 description: model.description ??
-                    "${model.user.displayName} posted a tweet on Fwitter.",
-                title: "Tweet on Fwitter app",
+                    "${model.user.displayName} posted a Swill on Swilow.",
+                title: "Swill on Swilow app",
                 imageUrl: Uri.parse(
-                    "https://play-lh.googleusercontent.com/e66XMuvW5hZ7HnFf8R_lcA3TFgkxm0SuyaMsBs3KENijNHZlogUAjxeu9COqsejV5w=s180-rw")),
+                    "file:///Users/mac/Dropbox/My%20Mac%20(MACs-MBP)/Downloads/ic_launcher(1)/web_hi_res_512.png")),
           );
 
           Navigator.pop(context);
           Utility.copyToClipBoard(
               scaffoldKey: scaffoldKey,
               text: uri.toString(),
-              message: "Tweet link copy to clipboard");
+              message: "Swill link copy to clipboard");
         }),
         isMyTweet
             ? _widgetBottomSheetRow(
@@ -126,7 +126,7 @@ class TweetBottomSheet {
             ? _widgetBottomSheetRow(
                 context,
                 AppIcon.delete,
-                text: 'Delete Tweet',
+                text: 'Delete Swill',
                 onPressed: () {
                   _deleteTweet(
                     context,
@@ -167,7 +167,7 @@ class TweetBottomSheet {
             : _widgetBottomSheetRow(
                 context,
                 AppIcon.report,
-                text: 'Report Tweet',
+                text: 'Report Swill',
               ),
       ],
     );
@@ -191,22 +191,22 @@ class TweetBottomSheet {
           ),
         ),
         _widgetBottomSheetRow(context, AppIcon.link,
-            text: 'Copy link to tweet', isEnable: true, onPressed: () async {
+            text: 'Copy link to Swill', isEnable: true, onPressed: () async {
           var uri = await Utility.createLinkToShare(
             context,
-            "tweet/${model.key}",
+            "Swill/${model.key}",
             socialMetaTagParameters: SocialMetaTagParameters(
                 description: model.description ??
-                    "${model.user.displayName} posted a tweet on Fwitter.",
-                title: "Tweet on Fwitter app",
+                    "${model.user.displayName} posted a Swill on Swilow.",
+                title: "Swill on Swillow app",
                 imageUrl: Uri.parse(
-                    "https://play-lh.googleusercontent.com/e66XMuvW5hZ7HnFf8R_lcA3TFgkxm0SuyaMsBs3KENijNHZlogUAjxeu9COqsejV5w=s180-rw")),
+                    "file:///Users/mac/Dropbox/My%20Mac%20(MACs-MBP)/Downloads/ic_launcher(1)/web_hi_res_512.png")),
           );
           Navigator.pop(context);
           Utility.copyToClipBoard(
               scaffoldKey: scaffoldKey,
               text: uri.toString(),
-              message: "Tweet link copy to clipboard");
+              message: "Swill link copy to clipboard");
         }),
         isMyTweet
             ? _widgetBottomSheetRow(
@@ -223,7 +223,7 @@ class TweetBottomSheet {
             ? _widgetBottomSheetRow(
                 context,
                 AppIcon.delete,
-                text: 'Delete Tweet',
+                text: 'Delete Swill',
                 onPressed: () {
                   _deleteTweet(
                     context,
@@ -261,7 +261,7 @@ class TweetBottomSheet {
             : _widgetBottomSheetRow(
                 context,
                 AppIcon.report,
-                text: 'Report Tweet',
+                text: 'Report Swill',
               ),
       ],
     );
@@ -366,7 +366,7 @@ class TweetBottomSheet {
           context,
           AppIcon.retweet,
           isEnable: true,
-          text: 'Retweet',
+          text: 'Reswill',
           onPressed: () {
             var state = Provider.of<FeedState>(context, listen: false);
             var authState = Provider.of<AuthState>(context, listen: false);
@@ -390,7 +390,7 @@ class TweetBottomSheet {
         _widgetBottomSheetRow(
           context,
           AppIcon.edit,
-          text: 'Retweet with comment',
+          text: 'Reswill with comment',
           isEnable: true,
           onPressed: () {
             var state = Provider.of<FeedState>(context, listen: false);
@@ -399,8 +399,8 @@ class TweetBottomSheet {
             Navigator.pop(context);
 
             /// `/ComposeTweetPage/retweet` route is used to identify that tweet is going to be retweet.
-            /// To simple reply on any `Tweet` use `ComposeTweetPage` route.
-            Navigator.of(context).pushNamed('/ComposeTweetPage/retweet');
+            /// To simple reply on any `Swill` use `ComposeSwillPage` route.
+            Navigator.of(context).pushNamed('/ComposeSwillPage/reswill');
           },
         )
       ],
@@ -432,10 +432,10 @@ class TweetBottomSheet {
   Widget _shareTweet(BuildContext context, FeedModel model, TweetType type) {
     var socialMetaTagParameters = SocialMetaTagParameters(
         description: model.description ??
-            "${model.user.displayName} posted a tweet on Fwitter.",
-        title: "Tweet on Fwitter app",
+            "${model.user.displayName} posted a Swill on Swilow.",
+        title: "Swill on Swilow app",
         imageUrl: Uri.parse(
-            "https://play-lh.googleusercontent.com/e66XMuvW5hZ7HnFf8R_lcA3TFgkxm0SuyaMsBs3KENijNHZlogUAjxeu9COqsejV5w=s180-rw"));
+            "file:///Users/mac/Dropbox/My%20Mac%20(MACs-MBP)/Downloads/ic_launcher(1)/web_hi_res_512.png"));
     return Column(
       children: <Widget>[
         Container(
@@ -456,24 +456,24 @@ class TweetBottomSheet {
           onPressed: () async {
             var url = Utility.createLinkToShare(
               context,
-              "tweet/${model.key}",
+              "Swill/${model.key}",
               socialMetaTagParameters: socialMetaTagParameters,
             );
             var uri = await url;
-            Utility.share(uri.toString(), subject: "Tweet");
+            Utility.share(uri.toString(), subject: "Swill");
             Navigator.pop(context);
           },
         ),
         _widgetBottomSheetRow(
           context,
           AppIcon.image,
-          text: 'Share with Tweet thumbnail',
+          text: 'Share with Swill thumbnail',
           isEnable: true,
           onPressed: () {
             socialMetaTagParameters = SocialMetaTagParameters(
-                title: "${model.user.displayName} posted a tweet on Fwitter.",
+                title: "${model.user.displayName} posted a swill on Swilow.",
                 imageUrl: Uri.parse(
-                    "https://play-lh.googleusercontent.com/e66XMuvW5hZ7HnFf8R_lcA3TFgkxm0SuyaMsBs3KENijNHZlogUAjxeu9COqsejV5w=s180-rw"));
+                    "file:///Users/mac/Dropbox/My%20Mac%20(MACs-MBP)/Downloads/ic_launcher(1)/web_hi_res_512.png"));
             Navigator.pop(context);
             Navigator.push(
               context,
@@ -482,7 +482,7 @@ class TweetBottomSheet {
                     model: model,
                     type: type,
                   ),
-                  id: "tweet/${model.key}",
+                  id: "swill/${model.key}",
                   socialMetaTagParameters: socialMetaTagParameters),
             );
           },

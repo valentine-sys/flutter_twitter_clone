@@ -54,7 +54,7 @@ class _WelcomePageState extends State<WelcomePage> {
             ),
             Spacer(),
             TitleText(
-              'See what\'s happening in the world right now.',
+              'Be in the world of education right now with family and friends.',
               fontSize: 25,
             ),
             SizedBox(
@@ -67,7 +67,7 @@ class _WelcomePageState extends State<WelcomePage> {
               crossAxisAlignment: WrapCrossAlignment.center,
               children: <Widget>[
                 TitleText(
-                  'Have an account already?',
+                  'Have an account already on Swilow?',
                   fontSize: 14,
                   fontWeight: FontWeight.w300,
                 ),

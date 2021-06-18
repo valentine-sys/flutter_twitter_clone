@@ -17,7 +17,7 @@ class AboutPage extends StatelessWidget {
       appBar: CustomAppBar(
         isBackButton: true,
         title: customTitleText(
-          'About Fwitter',
+          'About Swilow',
         ),
       ),
       body: ListView(
@@ -33,7 +33,7 @@ class AboutPage extends StatelessWidget {
             showDivider: false,
             onPressed: () {
               Utility.launchURL(
-                  "https://github.com/TheAlphamerc/flutter_twitter_clone/issues");
+                  "https://swilow.com/helpcentre");
             },
           ),
           HeaderWidget('Legal'),
@@ -55,24 +55,15 @@ class AboutPage extends StatelessWidget {
             onPressed: () async {
               showLicensePage(
                 context: context,
-                applicationName: 'Fwitter',
+                applicationName: 'Swilow',
                 applicationVersion: '1.0.0',
                 useRootNavigator: true,
               );
             },
           ),
           HeaderWidget('Developer'),
-          SettingRowWidget("Github", showDivider: true, onPressed: () {
-            Utility.launchURL("https://github.com/TheAlphamerc");
-          }),
-          SettingRowWidget("LinkidIn", showDivider: true, onPressed: () {
-            Utility.launchURL("https://www.linkedin.com/in/thealphamerc/");
-          }),
-          SettingRowWidget("Twitter", showDivider: true, onPressed: () {
-            Utility.launchURL("https://twitter.com/TheAlphaMerc");
-          }),
-          SettingRowWidget("Blog", showDivider: true, onPressed: () {
-            Utility.launchURL("https://dev.to/thealphamerc");
+          SettingRowWidget("Swilow", showDivider: true, onPressed: () {
+            Utility.launchURL("https://Swilow.com/Developer");
           }),
         ],
       ),

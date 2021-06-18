@@ -46,7 +46,7 @@ class UrlText extends StatelessWidget {
             onHashTagPressed: onHashTagPressed,
             text: result.text,
             style:
-                urlStyle != null ? urlStyle : TextStyle(color: Colors.blue)));
+                urlStyle != null ? urlStyle : TextStyle(color: Colors.greenAccent)));
       } else {
         widgets.add(TextSpan(
             text: result.text,

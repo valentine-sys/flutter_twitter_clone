@@ -32,7 +32,7 @@ class MyApp extends StatelessWidget {
             create: (_) => NotificationState()),
       ],
       child: MaterialApp(
-        title: 'Fwitter',
+        title: 'Swilow',
         theme: AppTheme.apptheme.copyWith(
           textTheme: GoogleFonts.muliTextTheme(
             Theme.of(context).textTheme,

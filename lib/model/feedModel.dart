@@ -120,7 +120,7 @@ class FeedModel {
         this.user.userName.isNotEmpty) {
       isValid = true;
     } else {
-      print("Invalid Tweet found. Id:- $key");
+      print("Invalid Swill found. Id:- $key");
     }
     return isValid;
   }

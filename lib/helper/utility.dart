@@ -248,12 +248,12 @@ class Utility {
     var url = await createLinkToShare(context, id,
         socialMetaTagParameters: socialMetaTagParameters);
 
-    share(url.toString(), subject: "Tweet");
+    share(url.toString(), subject: "Swii");
   }
 
   static shareFile(List<String> path, {String text = ""}) {
     try {
-      Share.shareFiles(path, text: text);
+      shareFile(path, text: text);
     } catch (error) {
       print(error);
     }

@@ -50,7 +50,7 @@ class _UpdateAppState extends State<UpdateApp> with WidgetsBindingObserver {
             ),
             SizedBox(height: 20),
             TitleText(
-              "The current version of app is no longer supported. We aploigize for any inconveiience we may have caused you",
+              "The current version of Swilow is no longer supported. We aploigize for any inconveiience we may have caused you",
               fontSize: 14,
               color: AppColor.darkGrey,
               textAlign: TextAlign.center,
@@ -65,7 +65,7 @@ class _UpdateAppState extends State<UpdateApp> with WidgetsBindingObserver {
                 color: TwitterColor.dodgetBlue,
                 onPressed: () {
                   Utility.launchURL(
-                      "https://play.google.com/store/apps/details?id=com.thealphamerc.flutter_twitter_clone");
+                      "https://play.google.com/store/apps/details?id=com.valome.solow");
                 },
                 padding: EdgeInsets.symmetric(horizontal: 30, vertical: 10),
                 child: TitleText('Update now', color: Colors.white),

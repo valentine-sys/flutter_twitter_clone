@@ -174,12 +174,12 @@ class _ProfilePageState extends State<ProfilePage>
                                                 color: isMyProfile
                                                     ? Colors.black87
                                                         .withAlpha(180)
-                                                    : Colors.blue,
+                                                    : Colors.greenAccent,
                                                 width: 1),
                                             shape: BoxShape.circle),
                                         child: Icon(
                                           AppIcon.messageEmpty,
-                                          color: Colors.blue,
+                                          color: Colors.greenAccent,
                                           size: 20,
                                         ),
 
@@ -214,7 +214,7 @@ class _ProfilePageState extends State<ProfilePage>
                                     border: Border.all(
                                         color: isMyProfile
                                             ? Colors.black87.withAlpha(180)
-                                            : Colors.blue,
+                                            : Colors.greenAccent,
                                         width: 1),
                                     borderRadius: BorderRadius.circular(20),
                                   ),
@@ -232,7 +232,7 @@ class _ProfilePageState extends State<ProfilePage>
                                           ? Colors.black87.withAlpha(180)
                                           : isFollower()
                                               ? TwitterColor.white
-                                              : Colors.blue,
+                                              : Colors.greenAccent,
                                       fontSize: 17,
                                       fontWeight: FontWeight.bold,
                                     ),
@@ -302,7 +302,7 @@ class _ProfilePageState extends State<ProfilePage>
       "profilePage/${widget.profileId}/",
       socialMetaTagParameters: SocialMetaTagParameters(
           description: user.bio ?? "Checkout ${user.displayName}'s profile",
-          title: "${user.displayName} is on Fwitter app",
+          title: "${user.displayName} is on Swilow app",
           imageUrl: Uri.parse(user.profilePic)),
     );
   }
@@ -351,8 +351,8 @@ class _ProfilePageState extends State<ProfilePage>
                         indicator: TabIndicator(),
                         controller: _tabController,
                         tabs: <Widget>[
-                          Text("Tweets"),
-                          Text("Tweets & replies"),
+                          Text("Swill"),
+                          Text("Swill & replies"),
                           Text("Media")
                         ],
                       ),
@@ -423,10 +423,10 @@ class _ProfilePageState extends State<ProfilePage>
                 padding: EdgeInsets.only(top: 50, left: 30, right: 30),
                 child: NotifyText(
                   title: isMyProfile
-                      ? 'You haven\'t ${isreply ? 'reply to any Tweet' : isMedia ? 'post any media Tweet yet' : 'post any Tweet yet'}'
-                      : '${authstate.profileUserModel.userName} hasn\'t ${isreply ? 'reply to any Tweet' : isMedia ? 'post any media Tweet yet' : 'post any Tweet yet'}',
+                      ? 'You haven\'t ${isreply ? 'reply to any swill' : isMedia ? 'post any media Swill yet' : 'post any swill yet'}'
+                      : '${authstate.profileUserModel.userName} hasn\'t ${isreply ? 'reply to any swill' : isMedia ? 'post any media swill yet' : 'post any swill yet'}',
                   subTitle: isMyProfile
-                      ? 'Tap tweet button to add new'
+                      ? 'Tap swill button to add new'
                       : 'Once he\'ll do, they will be shown up here',
                 ),
               )

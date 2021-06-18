@@ -47,7 +47,7 @@ class AccountSettingsPage extends StatelessWidget {
             secondHeader: true,
           ),
           SettingRowWidget("Country"),
-          SettingRowWidget("Your Fwitter data"),
+          SettingRowWidget("Your Swillow data"),
           SettingRowWidget("Apps and sessions"),
           SettingRowWidget(
             "Log out",
